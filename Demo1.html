@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Popcorn.js Demo </title>
+		<script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+
+		<script>
+		document.addEventListener("DOMContentLoaded",function(){
+	var popcorn_instance = Popcorn.youtube(
+	'#video' , 
+	'https://www.youtube.com/watch?v=Lc5DNhMxYvk' );
+
+	popcorn_instance.footnote(
+	{
+	start: 0,
+	end:8,
+	text:"The Darwin Awards commemorate individuals who protect our gene pool by making the ultimate sacrifice of their own lives. Darwin Award winners eliminate themselves in an extraordinarily idiotic manner, thereby improving our species' chances of long-term survival." ,
+	target: "footnotediv"
+	});
+
+	popcorn_instance.footnote(
+	{
+	start: 9,
+	end:19,
+	text:"#10.Lawyer Clement claims that a murder victim shot himself.Ends up shooting himself while demonstrating .He did win the case." ,
+	target: "footnotediv"
+	});
+	
+	popcorn_instance.footnote(
+	{
+	start: 23,
+	end:35,
+	text:"#9.Wheelchair guy rams his ride into the elevator door and falls down the elevator shaft." ,
+	target: "footnotediv"
+	});
+	
+	popcorn_instance.footnote(
+	{
+	start: 38,
+	end:51,
+	text:"#8.Man decides to clean his chimney with a live grenade(you know for those hard to reach places)." ,
+	target: "footnotediv"
+	});
+
+	popcorn_instance.footnote(
+	{
+	start: 55,
+	end:68,
+	text:"#7.Man makes a sledge using the protective padding from a lift tower, dies after crashing into the same tower." ,
+	target: "footnotediv"
+	});
+
+	popcorn_instance.footnote(
+	{
+	start: 71,
+	end:83,
+	text:"#6.Man shoots himself in the head with a single shot spy pen." ,
+	target: "footnotediv"
+	});
+
+
+	popcorn_instance.footnote(
+	{
+	start: 89,
+	end:100,
+	text:"#5.Lawyer falls from a window after pushing against it to prove it's safety." ,
+	target: "footnotediv"
+	});
+	
+	popcorn_instance.footnote(
+	{
+	start: 107,
+	end:117,
+	text:"#4.Man tries to stop a train with his alledgedly psychic powers." ,
+	target: "footnotediv"
+	});
+
+	popcorn_instance.footnote(
+	{
+	start: 123,
+	end:136,
+	text:"#3.Man puts an old detonator in his mouth and connects it to electricity." ,
+	target: "footnotediv"
+	});
+
+	popcorn_instance.footnote(
+	{
+	start: 140,
+	end:153,
+	text:"#2.While running from the cops , man jumps over the fence of a ZOO" ,
+	target: "footnotediv"
+	});
+
+	popcorn_instance.footnote(
+	{
+	start: 156,
+	end:170,
+	text:"#1.Man chops his head off to outdo a person who cut off his toe with a chainsaw." ,
+	target: "footnotediv"
+	});
+
+
+
+	popcorn_instance.googlemap(
+	{
+	start: 21, 
+	end: 87, 
+	type: " ROADMAP", 
+	target: "googlemap", 
+	location: "South Korea",  
+	zoom: 5 
+	});
+
+
+	popcorn_instance.googlemap(
+	{
+	start: 88, 
+	end: 107,  
+	type: " ROADMAP", 
+	target: "googlemap",  
+	location: "Toronto",  
+	zoom: 10 
+	});
+
+	popcorn_instance.googlemap(
+	{
+	start: 107, 
+	end: 123, 
+	type: " ROADMAP", 
+	target: "googlemap",  
+	location: "Russia",  
+	zoom: 5 
+	});
+
+	popcorn_instance.googlemap(
+	{
+	start: 123, 
+	end: 140, 
+	type: " ROADMAP", 
+	target: "googlemap",  
+	location: "Vietnam",  
+	zoom: 5 
+	});
+
+	popcorn_instance.googlemap(
+	{
+	start: 140, 
+	end: 170, 
+	type: " ROADMAP",
+	target: "googlemap", 
+	location: "South Africa",  
+	zoom: 5 
+	});
+
+
+	popcorn_instance.googlemap(
+	{
+	start: 170, 
+	end: 180, 
+	type: " ROADMAP", 
+	target: "googlemap",  
+	location: "Antarctica",  
+	zoom: 1 
+	});
+	
+	popcorn_instance.play();
+
+	}, false);
+	</script>
+	</head>
+
+	<body>
+		<div style="padding:50px;">
+			<div id="video" style="width: 360px; height: 300px;float:left" ></div>		
+			<div id ="footnotediv" style="width:400px ; height:300px;float:left;padding:50px"></div>
+		</div>
+		<br>
+		<div id = "googlemap" style="width:400px;height:350px"></div>
+
+	</body>
+
+</html>	
